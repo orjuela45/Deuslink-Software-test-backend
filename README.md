@@ -6,11 +6,11 @@ this project is a test for Deuslink Software which consist in create a CRUD with
 
 1. Clone the repository with the command
 ```
-git clone ....
+git clone https://github.com/orjuela45/Deuslink-Software-test-backend.git
 ```
 2. Go to the folder
 ```
-cd backend
+cd Deuslink-Software-test-backend
 ```
 3. Install the dependencies
 ```
