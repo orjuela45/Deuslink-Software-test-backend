@@ -1,0 +1,13 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev:tsc": "tsc --watch",
+    "dev:node": "nodemon ./dist/index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
