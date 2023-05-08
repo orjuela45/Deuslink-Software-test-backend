@@ -1,4 +1,4 @@
-import { timeZoneConvert } from "../helpes/timezone";
+import { timeZoneConvert } from "../helpes/";
 import { TaskInterface } from "../interfaces/task.interface";
 import Task from "../models/task.model";
 
