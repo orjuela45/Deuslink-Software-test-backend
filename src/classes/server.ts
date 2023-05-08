@@ -1,5 +1,6 @@
 import express, { Application } from "express";
 import cors from "cors";
+import dbConnection from '../database/config';
 
 class Server {
   private app: Application;
@@ -8,6 +9,9 @@ class Server {
   constructor(){
     this.app = express();
     this.port = process.env.PORT || '8000';
+
+    this.dbConnection();
+    this.middelware();
   }
 
   listen(){
@@ -19,6 +23,10 @@ class Server {
   middelware(){
     this.app.use(cors())
     this.app.use(express.json())
+  }
+
+  async dbConnection(){
+    await dbConnection();
   }
 }
 
