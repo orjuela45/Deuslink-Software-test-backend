@@ -1,5 +1,5 @@
 import dotenv from "dotenv";
-import Server from './classes/server';
+import Server from './classes/server.class';
 
 dotenv.config();
 

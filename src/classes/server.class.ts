@@ -1,10 +1,15 @@
 import express, { Application } from "express";
 import cors from "cors";
+
+import TaskRouter from "../routes/task.route";
 import dbConnection from '../database/config';
 
 class Server {
   private app: Application;
   private port: string;
+  private apiPaths = {
+    tasks: "/api/tasks"
+  }
 
   constructor(){
     this.app = express();
@@ -12,6 +17,7 @@ class Server {
 
     this.dbConnection();
     this.middelware();
+    this.routes();
   }
 
   listen(){
@@ -27,6 +33,10 @@ class Server {
 
   async dbConnection(){
     await dbConnection();
+  }
+
+  routes(){
+    this.app.use(this.apiPaths.tasks, TaskRouter)
   }
 }
 
