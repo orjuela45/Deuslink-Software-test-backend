@@ -52,4 +52,4 @@ Once the project is launch, you can use it with the url __localhost:8000__ (the 
 - I will share with you the documentation of the endpoints with Postman to test it
 documentation link: https://documenter.getpostman.com/view/5695480/2s93eYWD7D
 
-- I deploy this project in Railwayapp, the link is: 
+- I deploy this project in Railwayapp, the link is: https://deuslink-software-test-backend-production.up.railway.app/api/tasks/
