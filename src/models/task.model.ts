@@ -16,9 +16,6 @@ const taskSchema = new Schema<TaskInterface>({
     type: Date,
     required: true
   },
-  time: {
-    type: Date,
-  },
   pinned: {
     type: Boolean,
     default: false
